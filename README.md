@@ -1,6 +1,13 @@
 # Mastodon_Booru_Bot_NodeJS
 A bot that uploads pictures onto Mastodon. Images are fetched from Danbooru.donmai.us upon startup and after every hour.
 
+# Prequisites
+-NodeJS
+
+-A Mastodon instance account for your bot
+
+-Preferably some of kind of code editor like vscode
+
 # Account Setup
 After creating an account for your bot on your selected instance, go to Settings->Profile and tick the box annotated "This is a bot account"
 
@@ -23,11 +30,13 @@ After configuration click on the submit button, then click on the name of your a
 On the application settings page, make a note of the client key, client secret and access token values, as these will be needed for your bot.
 
 # Application setup
-First, install the following packages:
+First, install the following packages by entering the following commands in your project directory:
+
 ```npm install mastodon-api```
+
 ```npm install danbooru```
 
-Create a file in the repository titled .env, using key value pairs for the CLIENT_KEY, CLIENT_SECRET, ACCESS_TOKEN and API_URL keys.
+Create a file in the project directory titled .env, using key value pairs for the CLIENT_KEY, CLIENT_SECRET, ACCESS_TOKEN and API_URL keys.
 A template is available in .env_sample:
 
 ![Screenshot_2022-11-07_19-15-21](https://user-images.githubusercontent.com/117674960/200395453-abbacdc3-150a-4b92-a1cf-ce42ded6b9c0.jpg)
