@@ -49,4 +49,6 @@ In the bot.js file, add whichever tags you want the bot to search in the tags pa
 
 Once the application is configured to your liking, run the bot by entering the following command in your project directory:
 
-```node bot.js```
+```
+node bot.js
+```
