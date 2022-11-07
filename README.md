@@ -44,3 +44,7 @@ A template is available in .env_sample:
 In the bot.js file, add whichever tags you want the bot to search in the tags parameter for booru.posts() on line 28:
 
 ![Screenshot_2022-11-07_19-18-37](https://user-images.githubusercontent.com/117674960/200395831-2bebd4a6-00f0-421c-bba3-2645a5d930f6.jpg)
+
+Once the application is configured to your liking, run the bot by entering the following command in your project directory:
+
+```node bot.js```
