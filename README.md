@@ -23,6 +23,10 @@ After configuration click on the submit button, then click on the name of your a
 On the application settings page, make a note of the client key, client secret and access token values, as these will be needed for your bot.
 
 # Application setup
+First, install the following packages:
+```npm install mastodon-api```
+```npm install danbooru```
+
 Create a file in the repository titled .env, using key value pairs for the CLIENT_KEY, CLIENT_SECRET, ACCESS_TOKEN and API_URL keys.
 A template is available in .env_sample:
 
