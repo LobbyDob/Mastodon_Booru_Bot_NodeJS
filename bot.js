@@ -42,11 +42,11 @@ async function Post()
         });
 
     //Allow time for write operation to finish
-    setTimeout(function() {writeStream.close();}, 1000);
+    setTimeout(function() {writeStream.close();}, 2000);
     //Upload image as a Mastodon post
-    setTimeout(function() {MastodonPost(name, source);}, 1000);
+    setTimeout(function() {MastodonPost(name, source);}, 4000);
     //Delete image after uploading
-    setTimeout(function() {DeleteFile(name);}, 1000);
+    setTimeout(function() {DeleteFile(name);}, 6000);
 }
 
 function MastodonPost(name, source)
@@ -67,7 +67,7 @@ function MastodonPost(name, source)
                 console.log(`ID: ${data.id}\nTimestamp: ${data.created_at}\nContent: ${data.content}`);
             }
         })});  
-    setTimeout(function() {readStream.close();}, 1000);
+    setTimeout(function() {readStream.close();}, 2000);
 }
 
 function DeleteFile(name)
